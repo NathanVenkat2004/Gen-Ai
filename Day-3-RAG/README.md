@@ -1,28 +1,30 @@
-# Day 3 — RAG (Retrieval-Augmented Generation)
+# Day 3 — Retrieval-Augmented Generation (RAG)
 
-#🚀 What I Learned
+🚀 **What I Learned**
 
-* Converting text chunks into embeddings
-* Storing embeddings in a vector database (ChromaDB)
-* Understanding semantic search (meaning-based retrieval)
-* Building a retriever to fetch top-k relevant chunks
-* Creating a complete RAG pipeline using LLM
+- Converting document chunks into embeddings  
+- Storing embeddings in ChromaDB  
+- Understanding semantic search (search by meaning, not keywords)  
+- Building a retriever to fetch top-k relevant chunks  
+- Creating a complete RAG pipeline using LLM  
 
-#🛠️ Task
-Built a RAG pipeline that retrieves relevant document chunks and generates answers using a local LLM (TinyLlama via Ollama).
+🛠️ **Task**
 
-#🔥 Features
+Built a Retrieval-Augmented Generation (RAG) pipeline that retrieves relevant document chunks and generates answers using TinyLlama (via Ollama).
 
-* Load and process PDF documents
-* Generate embeddings using Ollama (nomic-embed-text)
-* Store vectors in ChromaDB
-* Retrieve top-k relevant chunks using semantic similarity
-* Generate answers using retrieved context
+🔥 **Features**
 
-#📁 Files
-doc_rag.py
-requirements.txt
+- Process PDF documents into chunks  
+- Generate embeddings using nomic-embed-text  
+- Store vectors in ChromaDB  
+- Retrieve top-k relevant chunks using semantic similarity  
+- Generate answers using retrieved context + LLM  
 
-#🎯 Key Insight
-RAG is not about memorizing data — it’s about retrieving the *right context* and letting the LLM generate accurate answers from it.
+📁 **Files**
 
+- doc_rag.py  
+- requirements.txt  
+
+🎯 **Key Insight**
+
+RAG is not about memorizing data — metadata and embeddings help retrieve the most relevant context, and the LLM uses that to generate accurate answers.
